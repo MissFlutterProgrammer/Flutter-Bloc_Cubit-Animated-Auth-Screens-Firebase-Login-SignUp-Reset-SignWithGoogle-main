@@ -29,10 +29,12 @@ class _HomeScreenState extends State<HomeScreen> {
       body: OfflineBuilder(
         connectivityBuilder: (
           BuildContext context,
-          ConnectivityResult connectivity,
+          List<ConnectivityResult> connectivity,
           Widget child,
         ) {
-          final bool connected = connectivity != ConnectivityResult.none;
+          final bool connected =
+              connectivity.contains(ConnectivityResult.wifi) ||
+                  connectivity.contains(ConnectivityResult.mobile);
           return connected ? _homePage(context) : const BuildNoInternet();
         },
         child: const Center(

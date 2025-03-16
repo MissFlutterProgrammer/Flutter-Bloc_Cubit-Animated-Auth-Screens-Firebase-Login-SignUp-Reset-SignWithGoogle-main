@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../theming/colors.dart';
 import '../../theming/styles.dart';
 
@@ -59,14 +58,14 @@ class AppTextFormField extends StatelessWidget {
             color: ColorsManager.coralRed,
             width: 1.3.w,
           ),
-          borderRadius: BorderRadius.circular(16.0),
+          borderRadius: BorderRadius.circular(16),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: ColorsManager.coralRed,
             width: 1.3.w,
           ),
-          borderRadius: BorderRadius.circular(16.0),
+          borderRadius: BorderRadius.circular(16),
         ),
         suffixIcon: suffixIcon,
       ),

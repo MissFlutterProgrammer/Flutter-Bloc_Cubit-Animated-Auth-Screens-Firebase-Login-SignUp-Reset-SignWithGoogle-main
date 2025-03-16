@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:rive/rive.dart';
-
 import '../../../helpers/app_regex.dart';
 import '../../../routing/routes.dart';
 import '../../../theming/styles.dart';
